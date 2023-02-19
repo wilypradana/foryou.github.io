@@ -1,0 +1,123 @@
+/* style */
+span {
+  animation: none !important;
+}
+/* animasi */
+@keyframes spin_words {
+  10% {
+    transform: translateY(-112%);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  35% {
+    transform: translateY(-212%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  60% {
+    transform: translateY(-312%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  85% {
+    transform: translateY(-412%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
+}
+/* animasi */
+.banner .card {
+  background-color: pink;
+  color: black;
+}
+
+.judul {
+  background-color: #ffffff;
+  height: 15vh;
+  display: grid;
+  place-items: center;
+}
+.wrapper {
+  box-sizing: content-box;
+  background-color: #ffffff;
+  height: 29px;
+  display: flex;
+}
+.words {
+  overflow: hidden;
+}
+span {
+  display: block;
+  height: 100%;
+  padding-left: 10px;
+  color: #0e6ffc;
+  animation: spin_words 6s infinite;
+}
+.utamaBanner {
+  height: 30vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("kontruksi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.kontenBanner {
+  border: 1px rgb(91, 96, 94) solid;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  height: 50vh;
+}
+.kontenBanner h1 {
+  color: white;
+  margin-top: 150px;
+}
+.kontenBanner p {
+  color: white;
+  margin-right: 90px;
+}
+.kontenBanner .btn {
+  color: rgb(0, 0, 0);
+  border-radius: 0;
+  margin-left: 420px;
+}
+.kontenBanner .btn:hover {
+  color: rgb(255, 255, 255);
+  border-radius: 0;
+}
+.music-player {
+  background-color: #eee;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-pause {
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  background-image: url("https://img.icons8.com/ios-filled/50/000000/play--v1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.playing .play-pause {
+  background-image: url("https://img.icons8.com/ios-filled/50/000000/pause--v1.png");
+}

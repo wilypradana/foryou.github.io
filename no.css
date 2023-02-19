@@ -1,0 +1,11 @@
+.banner {
+  border: 1px black solid;
+  height: 100vh;
+}
+.konten {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
