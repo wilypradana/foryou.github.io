@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Pilih</title>
+    <style style="text/tailwindcss">
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        background-color: palevioletred;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .kotak {
+        height: 300px;
+        width: 300px;
+        background-color: white;
+        border-radius: 20%;
+        border: 1px steelblue solid;
+      }
+      .kotak h1 {
+        font: bold;
+        text-align: center;
+      }
+      .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .no-button,
+      .yes-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        margin: 20px;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      .no-button {
+        background-color: red;
+      }
+
+      .yes-button {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="kotak">
+        <h1>im waiting until you accept me</h1>
+        <div class="button-container">
+          <a class="yes-button" href="yes.html">Berubah pikiran</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
